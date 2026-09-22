@@ -29,8 +29,7 @@ const Banner = () => {
                     <Image
                         src={image}
                         alt="Books"
-                        className="w-full max-w-md object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
-                    />
+                        className="w-full max-w-md object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"/>
                 </div>
 
             </div>
