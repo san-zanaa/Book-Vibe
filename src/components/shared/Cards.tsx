@@ -14,8 +14,8 @@ const BookCard = ({ book } : IbookCardProps) => {
                 <Image
                     src={book.image}
                     alt={book.bookName}
-                    width={800}
-                    height={800}
+                    width={900}
+                    height={900}
                     className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
 

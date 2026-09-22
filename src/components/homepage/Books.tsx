@@ -1,5 +1,4 @@
 import { Ibook } from '@/types/books.type';
-import React from 'react';
 import Cards from '../shared/Cards';
 
 const getBooks = async() => {
@@ -29,7 +28,7 @@ const Books = async () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {booksData.map((book: Ibook) => {
+        {booksData.slice(0,6).map((book: Ibook) => {
           return (
             <Cards
               key={book.bookId}

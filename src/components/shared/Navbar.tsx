@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '@/assets/book.ico'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -14,10 +15,8 @@ const Navbar = () => {
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li><a>Home</a></li>
         <li>
-          <a>Listed Books</a>
+          <Link href="/books">Listed Books</Link>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
           </ul>
         </li>
         <li><a>Pages to read</a></li>
@@ -32,9 +31,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1 text-xl font-medium">
       <li className='border border-green-500 rounded-md text-green-500'><a>Home</a></li>
       <li>
-        <details>
-          <summary>Listed Books</summary>
-        </details>
+          <Link href="/books">Listed Books</Link>
       </li>
       <li><a>Pages to read</a></li>
     </ul>
