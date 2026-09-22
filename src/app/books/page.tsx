@@ -75,10 +75,10 @@ const Books = async () => {
                 </div>
 
                 <div className='flex gap-5 text-left'>
-                    <button className="mt-5 w-fit rounded-full cursor-pointer bg-[#0077b6] px-6 py-3 font-semibold text-white hover:bg-[#1da108]">
+                    <button className="mt-5 w-fit rounded-full cursor-pointer bg-[#0077b6] px-6 py-3 font-semibold text-white hover:bg-[#1a659e]">
                   Catagory : {book.category}
                 </button>
-                <button className="mt-5 w-fit rounded-full cursor-pointer bg-[#23BE0A] px-6 py-3 font-semibold text-white hover:bg-[#1da108]">
+                <button className="mt-5 w-fit rounded-full cursor-pointer bg-[#23BE0A] hover:bg-[#1da108] px-6 py-3 font-semibold text-white hover:bg-[#1da108]">
                   View Details 🡪
                 </button>
                 </div>
