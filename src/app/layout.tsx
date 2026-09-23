@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 
 const playfair = Playfair_Display({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-[family:var(--font-playfair)]">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
