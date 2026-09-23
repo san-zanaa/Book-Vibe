@@ -3,6 +3,7 @@ import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/Footer/Footer";
+import BooksProvider from "@/context/BooksContext";
 
 
 const playfair = Playfair_Display({
@@ -27,9 +28,11 @@ export default function RootLayout({
   className={`${playfair.variable} h-full antialiased`} 
 >
       <body className="min-h-full flex flex-col font-[family:var(--font-playfair)]">
-        <Navbar />
-        {children}
-        <Footer />
+        <BooksProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </BooksProvider>
       </body>
     </html>
   );
